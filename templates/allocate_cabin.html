@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allocate Cabin</title>
+    <link rel="stylesheet" href="static/css/allocate_cabin.css">
+</head>
+<body>
+    <h1>Allocate Cabin</h1>
+    <form action="/allocate-cabin" method="post">
+        <label>User ID:</label><br>
+        <input type="text" name="user_id" required><br><br>
+        <input type="submit" value="Allocate Cabin">
+    </form>
+    
+    <!-- If there is an error, display it -->
+    {% if error %}
+    <p style="color:red;"><strong>{{ error }}</strong></p>
+    {% endif %}
+    
+    <!-- If the cabin is successfully allocated, display the result -->
+    {% if result %}
+    <p><strong>{{ result }}</strong></p>
+    {% endif %}
+</body>
+</html>

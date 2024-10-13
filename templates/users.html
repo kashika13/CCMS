@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Users</title>
+    <link rel="stylesheet" href="static/css/users.css">
+</head>
+<body>
+    <h1>Registered Users</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Registration Date</th>
+            <th>User ID</th>
+        </tr>
+        {% for user in users %}
+        <tr>
+            <td>{{ user['name'] }}</td>
+            <td>{{ user['phone'] }}</td>
+            <td>{{ user['email'] }}</td>
+            <td>{{ user['registration_date'] }}</td>
+            <td>{{ user['user_id'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

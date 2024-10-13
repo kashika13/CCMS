@@ -1,0 +1,64 @@
+/* General reset and font style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Styling for the header */
+h1 {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px;
+    font-size: 2.5rem;
+}
+
+/* Center the content */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styling the navigation list */
+ul {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    margin-bottom: 15px;
+}
+
+ul li a {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+ul li a:hover {
+    background-color: #2980b9;
+}
+
+/* Add some spacing to the bottom of the page */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}

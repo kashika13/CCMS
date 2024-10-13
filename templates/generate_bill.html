@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Bill</title>
+    <link rel="stylesheet" href="static/css/generate_bill.css">
+</head>
+<body>
+    <h1>Generate Bill</h1>
+    <form action="/generate-bill" method="post">
+        <label>User ID:</label><br>
+        <input type="text" name="user_id" required><br><br>
+        <input type="submit" value="Generate Bill">
+    </form>
+    
+    <!-- If there is an error, display it -->
+    {% if error %}
+    <p style="color:red;"><strong>{{ error }}</strong></p>
+    {% endif %}
+    
+    <!-- If bill is generated, display the user info and bill -->
+    {% if name %}
+    <p><strong>Name: </strong>{{ name }}</p>
+    <p><strong>Hours Used: </strong>{{ hours }}</p>
+    <p><strong>Bill: Rs.{{ bill }}</strong></p>
+    {% endif %}
+</body>
+</html>
