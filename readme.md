@@ -20,3 +20,9 @@ Ensure the following are installed on your system before running the application
 - **Python 3.x**
 - **Flask**
 - **SQLite**
+
+## Video Demo
+
+
+https://github.com/user-attachments/assets/d652706d-40ad-4229-beca-84b350a2d037
+
