@@ -21,3 +21,4 @@ Prerequisites:
 --Flask
 --SQLite
 
+git reset --hard <commit-hash>
